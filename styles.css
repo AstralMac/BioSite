@@ -150,8 +150,9 @@ nav li a {
 #hero {
 
     float: left;
-    max-width: auto;
-    padding: 2%;
+    max-width: 600px;
+    padding-top: 0.25%;
+    padding-right: 5%;
 }
 
 /* Style rules for the main area*/
@@ -166,7 +167,8 @@ main {
 
 #Main-Text {
 
-    padding: 3%;
+    padding: 0%;
+
 }
 
 main h2{
@@ -210,6 +212,8 @@ main p {
 
 footer {
 
+    position: static;
+
     text-align: center;
 
     font-size: 12px;
@@ -252,13 +256,7 @@ footer a {
 
         padding: 0.5em;
 
-    }
-
-
-
-} 
-    
-}
+    } 
 
 /* Media Query for Tablet Viewport */
 @media  screen and (min-width: 620px), print {
@@ -350,12 +348,13 @@ footer a {
 
 .main-text {
 
-   
+       position:static;
+
        width: 1920px;
    
        margin-top: 0;
    
-       margin-bottom: 0;
+       margin-bottom: auto;
    
        margin-left: auto;
    
@@ -367,17 +366,23 @@ footer a {
    
      }
 
-    }
-   
-     /* Media Query for Print*/
-     @media print {
-   
-       body{
-   
-         background-color: #ffffff;
-   
-         color: #000;
-   
-       }
-   
+     footer {
+
+        position: static;
      }
+   #hero {
+
+    position:static ;
+   }
+     /* Media Query for Print*/
+     @media print {  body{
+   
+        background-color: #ffffff;
+  
+        color: #000;
+  
+      }
+    }
+    
+   }
+}
