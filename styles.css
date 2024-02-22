@@ -1,0 +1,383 @@
+/*
+Malcolm Abdullah
+February 18th, 2024
+styles.css
+*/
+
+/*CSS Reset*/
+
+body, header, nav, main, footer, img, h1, h2, h3, ul, p {
+
+        margin: 0;
+
+        padding: 0;
+
+        border: 0;
+}
+
+/* Style rules for body and image*/
+
+body {
+
+    background-color: #ffff00;
+
+}
+
+img {
+
+    max-width: 100%;
+    
+}
+
+/* Style Rules for mobile viewport*/
+@media screen and (min-width: 386px), print {
+
+.mobile h1 {
+
+    font-family: 'sans-serif', system-ui;
+
+}
+
+.mobile h2 {
+
+    font-family: 'Times New Roman', Times, serif;
+
+}
+/* Style Rules to show mobile class and hide tab0desk class*/
+
+.mobile {
+
+    display: block;
+
+}
+
+.tab-desk {
+
+    display: none;
+
+}
+}
+
+/* Style rules for header area */
+
+header {
+
+background-color: #ffc0cb;
+
+padding: 0%;
+
+}
+
+header h1 {
+
+padding: 2%;
+
+text-align: center;
+
+}
+
+.sunflower {
+
+    display: block;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    padding-bottom: 4%;
+
+    width: 35%;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+/* Style rules for navigation area*/
+
+nav {
+
+    background-color: #000;
+
+}
+
+nav ul {
+
+    list-style-type: none;
+
+    text-align: center;
+
+}
+
+nav li {
+
+    display:inline-block;
+
+    padding: 2%;
+
+    color: #ffc0cb;
+
+    font-size: 2em;
+
+    font-family: sans-serif;
+
+    font-weight: bold;
+
+}
+
+nav li a {
+
+    display: block;
+
+    color: #ffc0cb;
+
+    padding-top: 0em;
+
+    padding-bottom: 0em;
+
+    padding-left: 1em;
+
+    padding-right: 1em;
+
+    text-decoration: none;
+
+}
+
+/* Style Rules for Hero image*/
+#hero {
+
+    float: left;
+    max-width: auto;
+    padding: 2%;
+}
+
+/* Style rules for the main area*/
+
+main {
+
+    padding: 2%;
+
+    font-family: sans-serif, serif;
+
+}
+
+#Main-Text {
+
+    padding: 3%;
+}
+
+main h2{
+
+text-align: center;
+
+padding: 1%;
+
+font-family: sans-serif, serif;
+
+font-size: 40px;
+
+font-weight: bold;
+
+}
+
+.italic {
+
+font-style: italic;
+
+font-size: 25px;
+
+text-align: center;
+
+padding: 2%;
+
+}
+
+main p {
+
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 20px;
+
+    padding: 1%;
+
+    text-align: left;
+}
+
+/* Style Rules for footer*/
+
+footer {
+
+    text-align: center;
+
+    font-size: 12px;
+
+    background-color: #000;
+
+    color: #ffff00;
+
+    padding-top: 1%;
+
+    padding-bottom: 1%;
+
+    padding-right: 0%;
+
+    padding-left: 0%;
+
+}
+
+footer a {
+
+    color: #ffc0cb;
+
+    text-decoration: none;
+
+}
+
+/* Tablet Viewport: Style rules for nav area */
+
+    nav li {
+
+        border-top: none;
+
+        display: inline-block;
+
+        font-size: 30px;
+
+    }
+
+    nav li a {
+
+        padding: 0.5em;
+
+    }
+
+
+
+} 
+    
+}
+
+/* Media Query for Tablet Viewport */
+@media  screen and (min-width: 620px), print {
+
+    /* Tablet Viewport: Show tab-desk class, hide mobile class*/
+   
+         .tab-desk {
+   
+             display: block;
+   
+         }
+   
+         .mobile {
+   
+             display: none;
+   
+         }
+   
+    /* Tablet Viewport: Style rules for nav area */
+   
+         nav li {
+   
+             border-top: none;
+   
+             display: inline-block;
+   
+             font-size: 30px;
+   
+         }
+   
+         nav li a {
+   
+             padding: 0.5em;
+   
+         }
+   
+   
+   
+   }
+   
+   /* Media Query for Desktop Viewport*/
+   
+   @media  screen and (min-width: 1000px), print {
+
+    /*Desktop Viewport: Style rules for body*/
+    body {
+        background: linear-gradient(#000, #ffff00);
+      }
+   
+     /*Desktop Viewport: Style rules for nav area*/
+   
+     nav li {
+   
+       font-size: 1.5em;
+   
+     }
+   
+     nav li a {
+   
+       padding-top: 0.5em;
+   
+       padding-bottom: 0.5em;
+   
+       padding-left: 1.5em;
+   
+       padding-right: 1.5em;
+   
+     }
+   
+     nav li a:hover {
+   
+       color: #2a1f14;
+   
+       background-color: #f6eee4;
+     }
+   
+     /* Desktop Viewport: Style rules for main content*/
+   
+   
+   /* Media Query for Large Desktop Viewport*/
+   
+   @media screen and (min-width: 1921px){
+
+   /* Large Desktop Viewport: Style rules for main text */
+
+   main {
+    background-color: #ffff00
+}
+
+.main-text {
+
+   
+       width: 1920px;
+   
+       margin-top: 0;
+   
+       margin-bottom: 0;
+   
+       margin-left: auto;
+   
+       margin-right: auto;
+
+       text-align: center;
+
+       float: right;
+   
+     }
+
+    }
+   
+     /* Media Query for Print*/
+     @media print {
+   
+       body{
+   
+         background-color: #ffffff;
+   
+         color: #000;
+   
+       }
+   
+     }
