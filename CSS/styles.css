@@ -5,8 +5,7 @@ styles.css
 */
 
 /*CSS Reset*/
-
-body, header, nav, main, footer, img, h1, h2, h3, ul, p, div, figure, figcaption, section, article, aside{
+body, header, nav, main, footer, img, h1, h2, h3, ul, p, div, figure, figcaption, section, article, aside, hr{
 margin: 0;
 padding: 0;
 border: 0;
@@ -25,22 +24,19 @@ margin-right: auto;
 }
 
 /* Style Rules for mobile viewport*/
-@media screen and (min-width: 386px), print {
-
 .mobile h1 {
 font-family: 'sans-serif', system-ui;}
 
 .mobile h2 {
 font-family: 'Times New Roman', Times, serif;}
 
-/* Style Rules to show mobile class and hide tab0desk class*/
+/* Style Rules to show mobile class and hide tab-desk class*/
 .mobile {
 display: block;
 }
 
 .tab-desk {
 display: none;}
-}
 
 /* Style rules for header area */
 header {
@@ -86,6 +82,7 @@ text-decoration: none;
 main {
 padding: 2%;
 font-family: sans-serif, serif, 'Times New Roman';
+border: 2px solid #000;
 }
 
 main h2{
@@ -94,6 +91,7 @@ padding: 1%;
 font-family: 'sans-serif', 'serif';
 font-size: 40px;
 font-weight: bold;
+text-decoration: underline;
 }
 
 main h3{
@@ -111,7 +109,8 @@ padding: 2%;
 main p {
 font-family: 'Times New Roman', Times, serif;
 font-size: 20px;
-padding: 1%;
+padding-left: 10%;
+padding-right: 10%;
 text-align: left;
 }
 
@@ -122,11 +121,15 @@ article{
 article ul{
     margin: auto;
 }
+
+#Main-content{
+    border: 5px solid #000;
+}
 .sunflower {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 4%;
+    padding-bottom: 0.5%;
     max-width: 20%;
     justify-content: center;
     align-items: center;
@@ -147,6 +150,10 @@ article ul{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+hr{
+    color: #000;
 }
 
 figure{
@@ -281,7 +288,6 @@ padding: 0.5em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    float: right;
     }
 
     footer {
